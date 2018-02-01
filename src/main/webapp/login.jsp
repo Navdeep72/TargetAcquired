@@ -1,5 +1,3 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -39,9 +37,10 @@ nav ul a {
 article {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 500px;
     padding: 1em;
     overflow: hidden;
+    text-align: justify;
 }
 
 .sidenav {
@@ -91,11 +90,11 @@ article {
 <header>
    <h1>Target Acquired</h1>
    
-  <div id="mySidenav" class="sidenav">
+   <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="home">Home page</a>
   <a href="form">Registration</a>
-  <a href="login">Login</a>
+  <a href="town.html">Login</a>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
 
@@ -110,26 +109,15 @@ function closeNav() {
 </script>
 
 </header>
-<article>
 
+
+<article>
 <div class="w3-card-4">
 	<div class="w3-container w3-teal">
-  		<h2>Registratie Formulier</h2>
+  		<h2>Enter Username and Password</h2>
 	</div>
 	
 	<form class="w3-container" method="post" action="/person/new">
-		<label class="w3-text-teal">First Name:</label>
-		<input class="w3-input w3-border w3-light-grey "type="text" name="firstName" /><br />
-		
-		<label class="w3-text-teal">Last Name:</label>
-		<input class="w3-input w3-border w3-light-grey "type="text" name="lastName" /><br />
-		
-		<label class="w3-text-teal">Age:</label>
-		<input class="w3-input w3-border w3-light-grey "type="text" name="age" /><br />
-		
-		<label class="w3-text-teal">Email:</label>
-		<input class="w3-input w3-border w3-light-grey "type="text" name="eMail" /><br />
-		
 		<label class="w3-text-teal">User Name:</label>
 		<input class="w3-input w3-border w3-light-grey "type="text" name="userName" /><br />
 		
@@ -137,56 +125,10 @@ function closeNav() {
 		<input class="w3-input w3-border w3-light-grey "type="password" name="password" /><br />
 		
 		<button class="w3-btn w3-blue" type="submit">
-			Registreer
+			Log In
 		</button>
 	</form>
 </div>
-
-	<table>
-		<thead>
-			<tr style="background-color: black; color: White">
-				<td>ID</td>
-				<td>First Name</td>
-				<td>Last Name</td>
-				<td>Age</td>
-				<td>Email</td>
-			</tr>
-		</thead>
-		
-		<c:forEach items="${account}" var="account">
-		
-			<tr>
-				<td>${account.id}</td>
-				<td>${account.firstName}</td>
-				<td>${account.lastName}</td>
-				<td>${account.age}</td>
-				<td>${account.eMail}</td>
-			</tr>
-		</c:forEach>
-		
-	</table>
-	
-		<table>
-		<thead>
-			<tr style="background-color: black; color: White">
-			
-				<td>ID</td>
-				<td>User Name</td>
-				<td>Password</td>
-				<td>account ID</td>
-			</tr>
-		</thead>
-		
-		<c:forEach items="${accountCredential}" var="accountCredential">
-		
-			<tr>
-				<td>${accountCredential.id}</td>
-				<td>${accountCredential.userName}</td>
-				<td>${accountCredential.password}</td>
-				<td>${accountCredential.account.id}</td>
-			</tr>
-		</c:forEach>
-	</table>
 </article>
 
 <footer>Copyright &copy; AlphaMales.com</footer>
