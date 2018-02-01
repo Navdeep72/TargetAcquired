@@ -112,16 +112,14 @@ function closeNav() {
 <article>
   <h1>Tokyo</h1>
   <p>Tokyo, officially Tokyo Metropolis, is the capital city of Japan and one of its 47 prefectures.</p>
-  <p>The Greater Tokyo Area is the most populous metropolitan area in the world.[8] It is the seat of the Emperor of Japan and the Japanese 
+  <p>The Greater Tokyo Area is the most populous metropolitan area in the world. It is the seat of the Emperor of Japan and the Japanese 
   government. Tokyo is in the Kanto region on the southeastern side of the main island Honshu and includes the Izu Islands and Ogasawara Islands.
   Formerly known as Edo, it has been the de facto seat of government since 1603 when Shogun Tokugawa Ieyasu made the city his headquarters. It 
   officially became the capital after Emperor Meiji moved his seat to the city from the old capital of Kyoto in 1868; at that time Edo was renamed 
   Tokyo. Tokyo Metropolis was formed in 1943 from the merger of the former Tokyo Prefecture and the city of Tokyo.<p>
-  <img src="images/tokyo-banner.jpg">
 </article>
 
 <footer>Copyright &copy; AlphaMales.com</footer>
-
 </div>
 
 </body>
